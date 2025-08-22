@@ -49,3 +49,56 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.text-box h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+.text-box p{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.text-box a{
+    text-decoration: none;
+    color: #fff;
+    background: #f44336;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.text-box a:hover{
+    background: #fff;
+    color: #f44336;
+}
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 40px;
+    }
+    .text-box p{
+        font-size: 16px;
+    }
+    .text-box a{
+        padding: 8px 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #fff;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        text-align: left;
+    }
+}
